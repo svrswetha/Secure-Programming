@@ -1,0 +1,9 @@
+[dependencies]
+
+regex = "1"
+text_io = "0.1.7"
+
+[package]
+
+name="hel"
+version = "1.0.0"
