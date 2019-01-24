@@ -1,0 +1,36 @@
+signup - root,
+signin - root
+makeuseractive - already root 
+signup-admin
+signin - admin
+makeuserAdmin admin by root jwt - this will enable is validated
+signup- new user -fresh
+signin - fresh
+makeuseractive - fresh with admin jwt
+group/new - create a new group(newgrouptestbyfresh) with fresh jwt
+makeGroupActive - newgrouptest by admin jwt		
+join - anyones jwt with new group name (newgrouptestbyfresh) - whos ever jwt is used it will be saved as that member_name in group_name
+makegroupmemberactive - is added 1- (membership gets activated) with newgrouptest, along member_name - fresh with whos ever jwt is used (fresh) in groups/join
+items/upload (file uplaod)- jwt of whoever you want to share (fresh) and body - filename must outputs fileID - db files
+download - upload auth(jwt of fresh) - along with fileid- GET - click download - whichever location you wants - gets downloaded in to local device
+put - item -fileid linking along with {
+	"description":"by fresh",
+	"share-with":"newgrouptestbyfresh",
+	 "fileid": "FU-a_81VDI_U"
+}can be viewd in items and itemsharingin db
+
+view - fresh jwt - all the items has been shared with him across groups 
+get - retrive fresh has created items with fresh jwt
+get/IT-zxqbrQWOM - with fresh jwt retrieves that specific item details
+
+edit/IT-zxqbrQWOM - with fresh jwt along with put body with updated description, fileid
+can be viewed in items
+{
+	"description":"by editedfresh",
+	"share-with":"newgrouptestbyfresh",
+	 "fileiD": "FU-a_81VDI_U"
+}
+remove - itemid with jwt (fresh) or inorder to check give anyother user other than admin or root or group creator-it says unauthorized .admin or group creater ca delete. other users cannot delete
+
+
+
